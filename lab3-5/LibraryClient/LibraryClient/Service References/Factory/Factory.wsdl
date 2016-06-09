@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Factory" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Factory/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Factory/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SFactory_get_Factory_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Factory_Name" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_Factory_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Factory_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_set_Factory_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Factory_Name" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_set_Factory_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Factory_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_Factory_Address_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Factory_Address" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_Factory_Address_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Factory_AddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_set_Factory_Address_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Factory_Address" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_set_Factory_Address_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Factory_AddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_Factory_Country_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Factory_Country" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_Factory_Country_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Factory_CountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_set_Factory_Country_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Factory_Country" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_set_Factory_Country_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Factory_CountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_Insert_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_Insert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_toString_InputMessage">
+    <wsdl:part name="parameters" element="tns:toString" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_toString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:toStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_InputMessage">
+    <wsdl:part name="parameters" element="tns:get" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_name_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_name" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_get_name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_nameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_getByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getByName" />
+  </wsdl:message>
+  <wsdl:message name="SFactory_getByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SFactory">
+    <wsdl:operation name="get_Factory_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/get_Factory_Name" message="tns:SFactory_get_Factory_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/get_Factory_NameResponse" message="tns:SFactory_get_Factory_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Factory_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/set_Factory_Name" message="tns:SFactory_set_Factory_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/set_Factory_NameResponse" message="tns:SFactory_set_Factory_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Factory_Address">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/get_Factory_Address" message="tns:SFactory_get_Factory_Address_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/get_Factory_AddressResponse" message="tns:SFactory_get_Factory_Address_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Factory_Address">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/set_Factory_Address" message="tns:SFactory_set_Factory_Address_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/set_Factory_AddressResponse" message="tns:SFactory_set_Factory_Address_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Factory_Country">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/get_Factory_Country" message="tns:SFactory_get_Factory_Country_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/get_Factory_CountryResponse" message="tns:SFactory_get_Factory_Country_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Factory_Country">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/set_Factory_Country" message="tns:SFactory_set_Factory_Country_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/set_Factory_CountryResponse" message="tns:SFactory_set_Factory_Country_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/Insert" message="tns:SFactory_Insert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/InsertResponse" message="tns:SFactory_Insert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/Update" message="tns:SFactory_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/UpdateResponse" message="tns:SFactory_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/Delete" message="tns:SFactory_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/DeleteResponse" message="tns:SFactory_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/toString" message="tns:SFactory_toString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/toStringResponse" message="tns:SFactory_toString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/get" message="tns:SFactory_get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/getResponse" message="tns:SFactory_get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_name">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/get_name" message="tns:SFactory_get_name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/get_nameResponse" message="tns:SFactory_get_name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/SFactory/getByName" message="tns:SFactory_getByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SFactory/getByNameResponse" message="tns:SFactory_getByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_SFactory" type="tns:SFactory">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_Factory_Name">
+      <soap:operation soapAction="http://tempuri.org/SFactory/get_Factory_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Factory_Name">
+      <soap:operation soapAction="http://tempuri.org/SFactory/set_Factory_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Factory_Address">
+      <soap:operation soapAction="http://tempuri.org/SFactory/get_Factory_Address" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Factory_Address">
+      <soap:operation soapAction="http://tempuri.org/SFactory/set_Factory_Address" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Factory_Country">
+      <soap:operation soapAction="http://tempuri.org/SFactory/get_Factory_Country" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Factory_Country">
+      <soap:operation soapAction="http://tempuri.org/SFactory/set_Factory_Country" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/SFactory/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/SFactory/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/SFactory/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <soap:operation soapAction="http://tempuri.org/SFactory/toString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="http://tempuri.org/SFactory/get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_name">
+      <soap:operation soapAction="http://tempuri.org/SFactory/get_name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <soap:operation soapAction="http://tempuri.org/SFactory/getByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Factory">
+    <wsdl:port name="BasicHttpBinding_SFactory" binding="tns:BasicHttpBinding_SFactory">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Factory/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

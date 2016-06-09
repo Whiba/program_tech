@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89909756-1A2E-4866-807F-2AC1989BE668}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryClient</RootNamespace>
+    <AssemblyName>LibraryClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.0.5.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.0.5\lib\net20\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\LibraryServer\LibraryServer\Service References\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCountry.Designer.cs">
+      <DependentUpon>AddCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmp.Designer.cs">
+      <DependentUpon>AddEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFactory.Designer.cs">
+      <DependentUpon>AddFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJP.Designer.cs">
+      <DependentUpon>AddJP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJS.Designer.cs">
+      <DependentUpon>AddJS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPosition.Designer.cs">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProfile.Designer.cs">
+      <DependentUpon>AddProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddShop.Designer.cs">
+      <DependentUpon>AddShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Arrangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Arrangement.Designer.cs">
+      <DependentUpon>Add_Arrangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Author.Designer.cs">
+      <DependentUpon>Add_Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Book.Designer.cs">
+      <DependentUpon>Add_Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Floor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Floor.Designer.cs">
+      <DependentUpon>Add_Floor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Genre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Genre.Designer.cs">
+      <DependentUpon>Add_Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Journal.Designer.cs">
+      <DependentUpon>Add_Journal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Librarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Librarian.Designer.cs">
+      <DependentUpon>Add_Librarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Location.Designer.cs">
+      <DependentUpon>Add_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Reader.Designer.cs">
+      <DependentUpon>Add_Reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Status.Designer.cs">
+      <DependentUpon>Add_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Arrangement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Author\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Book\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Cost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Country\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Employee\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Factory\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Floor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Genre\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Journal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Librarian\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Location\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Position\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Production_Journal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Product\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Profile\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Reader\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Shop\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Status\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Sup_Journal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCountry.resx">
+      <DependentUpon>AddCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmp.resx">
+      <DependentUpon>AddEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFactory.resx">
+      <DependentUpon>AddFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJP.resx">
+      <DependentUpon>AddJP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJS.resx">
+      <DependentUpon>AddJS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPosition.resx">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProfile.resx">
+      <DependentUpon>AddProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddShop.resx">
+      <DependentUpon>AddShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Arrangement.resx">
+      <DependentUpon>Add_Arrangement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Author.resx">
+      <DependentUpon>Add_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Book.resx">
+      <DependentUpon>Add_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Floor.resx">
+      <DependentUpon>Add_Floor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Genre.resx">
+      <DependentUpon>Add_Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Journal.resx">
+      <DependentUpon>Add_Journal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Librarian.resx">
+      <DependentUpon>Add_Librarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Location.resx">
+      <DependentUpon>Add_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Reader.resx">
+      <DependentUpon>Add_Reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Status.resx">
+      <DependentUpon>Add_Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\Arrangement\Arrangement.wsdl" />
+    <None Include="Service References\Arrangement\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Arrangement\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Author\Author.wsdl" />
+    <None Include="Service References\Author\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Author\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Book\Book.wsdl" />
+    <None Include="Service References\Book\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Book\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cost\Cost.wsdl" />
+    <None Include="Service References\Cost\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cost\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Country\Country.wsdl" />
+    <None Include="Service References\Country\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Country\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Employee\Employee.wsdl" />
+    <None Include="Service References\Employee\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Employee\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Factory\Factory.wsdl" />
+    <None Include="Service References\Factory\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Factory\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Floor\Floor.wsdl" />
+    <None Include="Service References\Floor\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Floor\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Genre\Genre.wsdl" />
+    <None Include="Service References\Genre\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Genre\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Journal\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Journal\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Journal\Journal.wsdl" />
+    <None Include="Service References\Librarian\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Librarian\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Librarian\Librarian.wsdl" />
+    <None Include="Service References\Location\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Location\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Location\Location.wsdl" />
+    <None Include="Service References\Position\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Position\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Position\Position.wsdl" />
+    <None Include="Service References\Production_Journal\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Production_Journal\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Production_Journal\Production_Journal.wsdl" />
+    <None Include="Service References\Product\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Product\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Product\Product.wsdl" />
+    <None Include="Service References\Profile\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Profile\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Profile\Profile.wsdl" />
+    <None Include="Service References\Reader\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Reader\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Reader\Reader.wsdl" />
+    <None Include="Service References\Shop\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Shop\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Shop\Shop.wsdl" />
+    <None Include="Service References\Status\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Status\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Status\Status.wsdl" />
+    <None Include="Service References\Sup_Journal\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Sup_Journal\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Sup_Journal\Sup_Journal.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Arrangement\" />
+    <WCFMetadataStorage Include="Service References\Author\" />
+    <WCFMetadataStorage Include="Service References\Book\" />
+    <WCFMetadataStorage Include="Service References\Cost\" />
+    <WCFMetadataStorage Include="Service References\Country\" />
+    <WCFMetadataStorage Include="Service References\Employee\" />
+    <WCFMetadataStorage Include="Service References\Factory\" />
+    <WCFMetadataStorage Include="Service References\Floor\" />
+    <WCFMetadataStorage Include="Service References\Genre\" />
+    <WCFMetadataStorage Include="Service References\Journal\" />
+    <WCFMetadataStorage Include="Service References\Librarian\" />
+    <WCFMetadataStorage Include="Service References\Location\" />
+    <WCFMetadataStorage Include="Service References\Position\" />
+    <WCFMetadataStorage Include="Service References\Production_Journal\" />
+    <WCFMetadataStorage Include="Service References\Product\" />
+    <WCFMetadataStorage Include="Service References\Profile\" />
+    <WCFMetadataStorage Include="Service References\Reader\" />
+    <WCFMetadataStorage Include="Service References\Shop\" />
+    <WCFMetadataStorage Include="Service References\Status\" />
+    <WCFMetadataStorage Include="Service References\Sup_Journal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Book\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Book\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Book\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Book\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Arrangement\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Arrangement\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Arrangement\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Arrangement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Author\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Author\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Author\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Author\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Genre\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Genre\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Genre\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Genre\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Floor\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Floor\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Floor\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Floor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Librarian\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Librarian\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Librarian\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Librarian\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Location\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Location\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Location\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Location\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Reader\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Reader\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Reader\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Reader\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Status\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Journal\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Journal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Journal\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Journal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Production_Journal\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Production_Journal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Production_Journal\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Production_Journal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cost\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cost\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cost\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cost\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Sup_Journal\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Sup_Journal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Sup_Journal\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Sup_Journal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Factory\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Factory\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Factory\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Factory\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Country\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Country\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Country\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Country\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Employee\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Employee\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Employee\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Employee\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Shop\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Shop\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Shop\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Shop\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Profile\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Profile\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Profile\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Profile\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Product\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Product\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Product\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Product\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Position\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Position\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Position\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Position\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

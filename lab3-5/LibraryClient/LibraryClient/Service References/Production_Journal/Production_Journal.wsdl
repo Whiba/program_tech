@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Production_Journal" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Production_Journal/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Production_Journal/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SProduction_Journal_get_Production_Journal_Factory_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Production_Journal_Factory" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_Production_Journal_Factory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Production_Journal_FactoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_set_Production_Journal_Factory_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Production_Journal_Factory" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_set_Production_Journal_Factory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Production_Journal_FactoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_Production_Journal_Product_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Production_Journal_Product" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_Production_Journal_Product_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Production_Journal_ProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_set_Production_Journal_Product_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Production_Journal_Product" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_set_Production_Journal_Product_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Production_Journal_ProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_Production_Journal_Number_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Production_Journal_Number" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_Production_Journal_Number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Production_Journal_NumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_set_Production_Journal_Number_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Production_Journal_Number" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_set_Production_Journal_Number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Production_Journal_NumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_Insert_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_Insert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_toString_InputMessage">
+    <wsdl:part name="parameters" element="tns:toString" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_toString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:toStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_InputMessage">
+    <wsdl:part name="parameters" element="tns:get" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_getByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getByName" />
+  </wsdl:message>
+  <wsdl:message name="SProduction_Journal_getByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SProduction_Journal">
+    <wsdl:operation name="get_Production_Journal_Factory">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/get_Production_Journal_Factory" message="tns:SProduction_Journal_get_Production_Journal_Factory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/get_Production_Journal_FactoryResponse" message="tns:SProduction_Journal_get_Production_Journal_Factory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Production_Journal_Factory">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/set_Production_Journal_Factory" message="tns:SProduction_Journal_set_Production_Journal_Factory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/set_Production_Journal_FactoryResponse" message="tns:SProduction_Journal_set_Production_Journal_Factory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Production_Journal_Product">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/get_Production_Journal_Product" message="tns:SProduction_Journal_get_Production_Journal_Product_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/get_Production_Journal_ProductResponse" message="tns:SProduction_Journal_get_Production_Journal_Product_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Production_Journal_Product">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/set_Production_Journal_Product" message="tns:SProduction_Journal_set_Production_Journal_Product_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/set_Production_Journal_ProductResponse" message="tns:SProduction_Journal_set_Production_Journal_Product_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Production_Journal_Number">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/get_Production_Journal_Number" message="tns:SProduction_Journal_get_Production_Journal_Number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/get_Production_Journal_NumberResponse" message="tns:SProduction_Journal_get_Production_Journal_Number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Production_Journal_Number">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/set_Production_Journal_Number" message="tns:SProduction_Journal_set_Production_Journal_Number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/set_Production_Journal_NumberResponse" message="tns:SProduction_Journal_set_Production_Journal_Number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/Insert" message="tns:SProduction_Journal_Insert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/InsertResponse" message="tns:SProduction_Journal_Insert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/Update" message="tns:SProduction_Journal_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/UpdateResponse" message="tns:SProduction_Journal_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/Delete" message="tns:SProduction_Journal_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/DeleteResponse" message="tns:SProduction_Journal_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/toString" message="tns:SProduction_Journal_toString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/toStringResponse" message="tns:SProduction_Journal_toString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/get" message="tns:SProduction_Journal_get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/getResponse" message="tns:SProduction_Journal_get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProduction_Journal/getByName" message="tns:SProduction_Journal_getByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProduction_Journal/getByNameResponse" message="tns:SProduction_Journal_getByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_SProduction_Journal" type="tns:SProduction_Journal">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_Production_Journal_Factory">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/get_Production_Journal_Factory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Production_Journal_Factory">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/set_Production_Journal_Factory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Production_Journal_Product">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/get_Production_Journal_Product" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Production_Journal_Product">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/set_Production_Journal_Product" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Production_Journal_Number">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/get_Production_Journal_Number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Production_Journal_Number">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/set_Production_Journal_Number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/toString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <soap:operation soapAction="http://tempuri.org/SProduction_Journal/getByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Production_Journal">
+    <wsdl:port name="BasicHttpBinding_SProduction_Journal" binding="tns:BasicHttpBinding_SProduction_Journal">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Production_Journal/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

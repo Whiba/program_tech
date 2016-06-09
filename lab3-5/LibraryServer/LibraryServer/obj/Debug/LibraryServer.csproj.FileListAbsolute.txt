@@ -1,0 +1,20 @@
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\LibraryServer.dll.config
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\LibraryServer.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\LibraryServer.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\Npgsql.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\Mono.Security.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\obj\Debug\LibraryServer.csprojResolveAssemblyReference.cache
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\obj\Debug\LibraryServer.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryServer\LibraryServer\obj\Debug\LibraryServer.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\LibraryServer.dll.config
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\LibraryServer.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\LibraryServer.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\Npgsql.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\Mono.Security.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\obj\Debug\LibraryServer.csprojResolveAssemblyReference.cache
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\obj\Debug\LibraryServer.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryServer\LibraryServer\obj\Debug\LibraryServer.pdb

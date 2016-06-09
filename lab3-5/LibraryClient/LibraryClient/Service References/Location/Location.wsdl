@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Location" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Location/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Location/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServLocation_get_MyBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyBook" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_MyBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_MyBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyBook" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_MyBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_MyFloor_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyFloor" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_MyFloor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyFloorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_MyFloor_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyFloor" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_MyFloor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyFloorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_MyArrangement_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyArrangement" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_MyArrangement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyArrangementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_MyArrangement_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyArrangement" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_MyArrangement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyArrangementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_Sector_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Sector" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_get_Sector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_SectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_Sector_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Sector" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_set_Sector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_SectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_getAllLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllLocations" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_getAllLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_SaveLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLocation" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_SaveLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_DeleteLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLocation" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_DeleteLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_UpdateLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLocation" />
+  </wsdl:message>
+  <wsdl:message name="ServLocation_UpdateLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLocationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServLocation">
+    <wsdl:operation name="get_MyBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/get_MyBook" message="tns:ServLocation_get_MyBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/get_MyBookResponse" message="tns:ServLocation_get_MyBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/set_MyBook" message="tns:ServLocation_set_MyBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/set_MyBookResponse" message="tns:ServLocation_set_MyBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MyFloor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/get_MyFloor" message="tns:ServLocation_get_MyFloor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/get_MyFloorResponse" message="tns:ServLocation_get_MyFloor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyFloor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/set_MyFloor" message="tns:ServLocation_set_MyFloor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/set_MyFloorResponse" message="tns:ServLocation_set_MyFloor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MyArrangement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/get_MyArrangement" message="tns:ServLocation_get_MyArrangement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/get_MyArrangementResponse" message="tns:ServLocation_get_MyArrangement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyArrangement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/set_MyArrangement" message="tns:ServLocation_set_MyArrangement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/set_MyArrangementResponse" message="tns:ServLocation_set_MyArrangement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Sector">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/get_Sector" message="tns:ServLocation_get_Sector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/get_SectorResponse" message="tns:ServLocation_get_Sector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Sector">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/set_Sector" message="tns:ServLocation_set_Sector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/set_SectorResponse" message="tns:ServLocation_set_Sector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/getAllLocations" message="tns:ServLocation_getAllLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/getAllLocationsResponse" message="tns:ServLocation_getAllLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/SaveLocation" message="tns:ServLocation_SaveLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/SaveLocationResponse" message="tns:ServLocation_SaveLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/DeleteLocation" message="tns:ServLocation_DeleteLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/DeleteLocationResponse" message="tns:ServLocation_DeleteLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLocation/UpdateLocation" message="tns:ServLocation_UpdateLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLocation/UpdateLocationResponse" message="tns:ServLocation_UpdateLocation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ServLocation" type="tns:ServLocation">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_MyBook">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/get_MyBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyBook">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/set_MyBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MyFloor">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/get_MyFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyFloor">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/set_MyFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MyArrangement">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/get_MyArrangement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyArrangement">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/set_MyArrangement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Sector">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/get_Sector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Sector">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/set_Sector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLocations">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/getAllLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLocation">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/SaveLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLocation">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/DeleteLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <soap:operation soapAction="http://tempuri.org/ServLocation/UpdateLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Location">
+    <wsdl:port name="BasicHttpBinding_ServLocation" binding="tns:BasicHttpBinding_ServLocation">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/LibraryServer/Location/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

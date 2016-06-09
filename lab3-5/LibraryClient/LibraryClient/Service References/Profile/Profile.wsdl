@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Profile" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Profile/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Profile/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SProfile_get_Profile_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Profile_Name" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_get_Profile_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Profile_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_set_Profile_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Profile_Name" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_set_Profile_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Profile_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_Insert_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_Insert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_toString_InputMessage">
+    <wsdl:part name="parameters" element="tns:toString" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_toString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:toStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_get_InputMessage">
+    <wsdl:part name="parameters" element="tns:get" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getResponse" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_getByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getByName" />
+  </wsdl:message>
+  <wsdl:message name="SProfile_getByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SProfile">
+    <wsdl:operation name="get_Profile_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/get_Profile_Name" message="tns:SProfile_get_Profile_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/get_Profile_NameResponse" message="tns:SProfile_get_Profile_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Profile_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/set_Profile_Name" message="tns:SProfile_set_Profile_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/set_Profile_NameResponse" message="tns:SProfile_set_Profile_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/Insert" message="tns:SProfile_Insert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/InsertResponse" message="tns:SProfile_Insert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/Update" message="tns:SProfile_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/UpdateResponse" message="tns:SProfile_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/Delete" message="tns:SProfile_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/DeleteResponse" message="tns:SProfile_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/toString" message="tns:SProfile_toString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/toStringResponse" message="tns:SProfile_toString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/get" message="tns:SProfile_get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/getResponse" message="tns:SProfile_get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/SProfile/getByName" message="tns:SProfile_getByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SProfile/getByNameResponse" message="tns:SProfile_getByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_SProfile" type="tns:SProfile">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_Profile_Name">
+      <soap:operation soapAction="http://tempuri.org/SProfile/get_Profile_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Profile_Name">
+      <soap:operation soapAction="http://tempuri.org/SProfile/set_Profile_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/SProfile/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/SProfile/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/SProfile/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <soap:operation soapAction="http://tempuri.org/SProfile/toString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="http://tempuri.org/SProfile/get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <soap:operation soapAction="http://tempuri.org/SProfile/getByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Profile">
+    <wsdl:port name="BasicHttpBinding_SProfile" binding="tns:BasicHttpBinding_SProfile">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Profile/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

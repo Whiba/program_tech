@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Floor" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Floor/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Floor/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServFloor_get_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Name" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_get_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_set_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Name" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_set_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_getAllFloors_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllFloors" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_getAllFloors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllFloorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_SaveFloor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFloor" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_SaveFloor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveFloorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_DeleteFloor_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFloor" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_DeleteFloor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFloorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_UpdateFloor_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFloor" />
+  </wsdl:message>
+  <wsdl:message name="ServFloor_UpdateFloor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFloorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServFloor">
+    <wsdl:operation name="get_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServFloor/get_Name" message="tns:ServFloor_get_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServFloor/get_NameResponse" message="tns:ServFloor_get_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServFloor/set_Name" message="tns:ServFloor_set_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServFloor/set_NameResponse" message="tns:ServFloor_set_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllFloors">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServFloor/getAllFloors" message="tns:ServFloor_getAllFloors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServFloor/getAllFloorsResponse" message="tns:ServFloor_getAllFloors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFloor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServFloor/SaveFloor" message="tns:ServFloor_SaveFloor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServFloor/SaveFloorResponse" message="tns:ServFloor_SaveFloor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFloor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServFloor/DeleteFloor" message="tns:ServFloor_DeleteFloor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServFloor/DeleteFloorResponse" message="tns:ServFloor_DeleteFloor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFloor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServFloor/UpdateFloor" message="tns:ServFloor_UpdateFloor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServFloor/UpdateFloorResponse" message="tns:ServFloor_UpdateFloor_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ServFloor" type="tns:ServFloor">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_Name">
+      <soap:operation soapAction="http://tempuri.org/ServFloor/get_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Name">
+      <soap:operation soapAction="http://tempuri.org/ServFloor/set_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllFloors">
+      <soap:operation soapAction="http://tempuri.org/ServFloor/getAllFloors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFloor">
+      <soap:operation soapAction="http://tempuri.org/ServFloor/SaveFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFloor">
+      <soap:operation soapAction="http://tempuri.org/ServFloor/DeleteFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFloor">
+      <soap:operation soapAction="http://tempuri.org/ServFloor/UpdateFloor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Floor">
+    <wsdl:port name="BasicHttpBinding_ServFloor" binding="tns:BasicHttpBinding_ServFloor">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/LibraryServer/Floor/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Book" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Book/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Book/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServBook_get_MyAuthor_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyAuthor" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_MyAuthor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyAuthorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_MyAuthor_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyAuthor" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_MyAuthor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyAuthorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_MyGenre_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyGenre" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_MyGenre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyGenreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_MyGenre_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyGenre" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_MyGenre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyGenreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Name" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Name" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Year_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Year" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Year_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_YearResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Year_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Year" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Year_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_YearResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Publishing_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Publishing" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Publishing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_PublishingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Publishing_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Publishing" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Publishing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_PublishingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Paper_number_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Paper_number" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Paper_number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Paper_numberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Paper_number_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Paper_number" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Paper_number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Paper_numberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Book_number_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Book_number" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_get_Book_number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Book_numberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Book_number_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Book_number" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_set_Book_number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Book_numberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_getAllBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllBooks" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_getAllBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_getBookByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBookByName" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_getBookByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBookByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_SaveBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBook" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_SaveBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_DeleteBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBook" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_DeleteBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_UpdateBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBook" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_UpdateBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_BookToString_InputMessage">
+    <wsdl:part name="parameters" element="tns:BookToString" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_BookToString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookToStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_getBookList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getBookList" />
+  </wsdl:message>
+  <wsdl:message name="ServBook_getBookList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getBookListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServBook">
+    <wsdl:operation name="get_MyAuthor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_MyAuthor" message="tns:ServBook_get_MyAuthor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_MyAuthorResponse" message="tns:ServBook_get_MyAuthor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyAuthor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_MyAuthor" message="tns:ServBook_set_MyAuthor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_MyAuthorResponse" message="tns:ServBook_set_MyAuthor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MyGenre">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_MyGenre" message="tns:ServBook_get_MyGenre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_MyGenreResponse" message="tns:ServBook_get_MyGenre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyGenre">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_MyGenre" message="tns:ServBook_set_MyGenre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_MyGenreResponse" message="tns:ServBook_set_MyGenre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_Name" message="tns:ServBook_get_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_NameResponse" message="tns:ServBook_get_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_Name" message="tns:ServBook_set_Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_NameResponse" message="tns:ServBook_set_Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Year">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_Year" message="tns:ServBook_get_Year_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_YearResponse" message="tns:ServBook_get_Year_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Year">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_Year" message="tns:ServBook_set_Year_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_YearResponse" message="tns:ServBook_set_Year_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Publishing">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_Publishing" message="tns:ServBook_get_Publishing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_PublishingResponse" message="tns:ServBook_get_Publishing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Publishing">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_Publishing" message="tns:ServBook_set_Publishing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_PublishingResponse" message="tns:ServBook_set_Publishing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Paper_number">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_Paper_number" message="tns:ServBook_get_Paper_number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_Paper_numberResponse" message="tns:ServBook_get_Paper_number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Paper_number">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_Paper_number" message="tns:ServBook_set_Paper_number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_Paper_numberResponse" message="tns:ServBook_set_Paper_number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Book_number">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/get_Book_number" message="tns:ServBook_get_Book_number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/get_Book_numberResponse" message="tns:ServBook_get_Book_number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Book_number">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/set_Book_number" message="tns:ServBook_set_Book_number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/set_Book_numberResponse" message="tns:ServBook_set_Book_number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllBooks">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/getAllBooks" message="tns:ServBook_getAllBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/getAllBooksResponse" message="tns:ServBook_getAllBooks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/getBookByName" message="tns:ServBook_getBookByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/getBookByNameResponse" message="tns:ServBook_getBookByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/SaveBook" message="tns:ServBook_SaveBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/SaveBookResponse" message="tns:ServBook_SaveBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/DeleteBook" message="tns:ServBook_DeleteBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/DeleteBookResponse" message="tns:ServBook_DeleteBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/UpdateBook" message="tns:ServBook_UpdateBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/UpdateBookResponse" message="tns:ServBook_UpdateBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BookToString">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/BookToString" message="tns:ServBook_BookToString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/BookToStringResponse" message="tns:ServBook_BookToString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getBookList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServBook/getBookList" message="tns:ServBook_getBookList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServBook/getBookListResponse" message="tns:ServBook_getBookList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ServBook" type="tns:ServBook">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_MyAuthor">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_MyAuthor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyAuthor">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_MyAuthor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MyGenre">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_MyGenre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyGenre">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_MyGenre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Name">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Name">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Year">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_Year" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Year">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_Year" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Publishing">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_Publishing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Publishing">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_Publishing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Paper_number">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_Paper_number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Paper_number">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_Paper_number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Book_number">
+      <soap:operation soapAction="http://tempuri.org/ServBook/get_Book_number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Book_number">
+      <soap:operation soapAction="http://tempuri.org/ServBook/set_Book_number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllBooks">
+      <soap:operation soapAction="http://tempuri.org/ServBook/getAllBooks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookByName">
+      <soap:operation soapAction="http://tempuri.org/ServBook/getBookByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBook">
+      <soap:operation soapAction="http://tempuri.org/ServBook/SaveBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBook">
+      <soap:operation soapAction="http://tempuri.org/ServBook/DeleteBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBook">
+      <soap:operation soapAction="http://tempuri.org/ServBook/UpdateBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookToString">
+      <soap:operation soapAction="http://tempuri.org/ServBook/BookToString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBookList">
+      <soap:operation soapAction="http://tempuri.org/ServBook/getBookList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Book">
+    <wsdl:port name="BasicHttpBinding_ServBook" binding="tns:BasicHttpBinding_ServBook">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/LibraryServer/Book/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

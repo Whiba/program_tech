@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Librarian" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Librarian/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Librarian/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServLibrarian_get_MyHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyHuman" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_get_MyHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_set_MyHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyHuman" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_set_MyHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_get_Date_of_employment_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Date_of_employment" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_get_Date_of_employment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Date_of_employmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_set_Date_of_employment_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Date_of_employment" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_set_Date_of_employment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Date_of_employmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_get_Telephone_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Telephone" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_get_Telephone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_TelephoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_set_Telephone_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Telephone" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_set_Telephone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_TelephoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_getAllLibrarians_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllLibrarians" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_getAllLibrarians_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllLibrariansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_SaveLibrarian_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLibrarian" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_SaveLibrarian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLibrarianResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_DeleteLibrarian_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLibrarian" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_DeleteLibrarian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLibrarianResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_UpdateLibrarian_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLibrarian" />
+  </wsdl:message>
+  <wsdl:message name="ServLibrarian_UpdateLibrarian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLibrarianResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServLibrarian">
+    <wsdl:operation name="get_MyHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/get_MyHuman" message="tns:ServLibrarian_get_MyHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/get_MyHumanResponse" message="tns:ServLibrarian_get_MyHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/set_MyHuman" message="tns:ServLibrarian_set_MyHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/set_MyHumanResponse" message="tns:ServLibrarian_set_MyHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Date_of_employment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/get_Date_of_employment" message="tns:ServLibrarian_get_Date_of_employment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/get_Date_of_employmentResponse" message="tns:ServLibrarian_get_Date_of_employment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Date_of_employment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/set_Date_of_employment" message="tns:ServLibrarian_set_Date_of_employment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/set_Date_of_employmentResponse" message="tns:ServLibrarian_set_Date_of_employment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Telephone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/get_Telephone" message="tns:ServLibrarian_get_Telephone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/get_TelephoneResponse" message="tns:ServLibrarian_get_Telephone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Telephone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/set_Telephone" message="tns:ServLibrarian_set_Telephone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/set_TelephoneResponse" message="tns:ServLibrarian_set_Telephone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllLibrarians">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/getAllLibrarians" message="tns:ServLibrarian_getAllLibrarians_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/getAllLibrariansResponse" message="tns:ServLibrarian_getAllLibrarians_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLibrarian">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/SaveLibrarian" message="tns:ServLibrarian_SaveLibrarian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/SaveLibrarianResponse" message="tns:ServLibrarian_SaveLibrarian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLibrarian">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/DeleteLibrarian" message="tns:ServLibrarian_DeleteLibrarian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/DeleteLibrarianResponse" message="tns:ServLibrarian_DeleteLibrarian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLibrarian">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServLibrarian/UpdateLibrarian" message="tns:ServLibrarian_UpdateLibrarian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServLibrarian/UpdateLibrarianResponse" message="tns:ServLibrarian_UpdateLibrarian_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ServLibrarian" type="tns:ServLibrarian">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_MyHuman">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/get_MyHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyHuman">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/set_MyHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Date_of_employment">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/get_Date_of_employment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Date_of_employment">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/set_Date_of_employment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Telephone">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/get_Telephone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Telephone">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/set_Telephone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLibrarians">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/getAllLibrarians" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLibrarian">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/SaveLibrarian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLibrarian">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/DeleteLibrarian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLibrarian">
+      <soap:operation soapAction="http://tempuri.org/ServLibrarian/UpdateLibrarian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Librarian">
+    <wsdl:port name="BasicHttpBinding_ServLibrarian" binding="tns:BasicHttpBinding_ServLibrarian">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/LibraryServer/Librarian/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

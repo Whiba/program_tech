@@ -1,0 +1,56 @@
+c:\users\анастасия\documents\visual studio 2015\Projects\LibraryClient\LibraryClient\bin\Debug\LibraryClient.exe.config
+c:\users\анастасия\documents\visual studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.csprojResolveAssemblyReference.cache
+c:\users\анастасия\documents\visual studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Properties.Resources.resources
+c:\users\анастасия\documents\visual studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.csproj.GenerateResource.Cache
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\bin\Debug\LibraryClient.exe
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\bin\Debug\LibraryClient.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.exe
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.MainForm.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Book.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Arrangement.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Author.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Floor.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Genre.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Journal.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Librarian.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Location.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Reader.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Status.resources
+C:\Users\Анастасия\Desktop\lab4\LibraryClient\LibraryClient\bin\Debug\LibraryClient.exe.config
+C:\Users\Анастасия\Desktop\lab4\LibraryClient\LibraryClient\obj\Debug\LibraryClient.exe
+C:\Users\Анастасия\Desktop\lab4\LibraryClient\LibraryClient\obj\Debug\LibraryClient.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\LibraryClient.exe.config
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.exe
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\LibraryClient.exe
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\LibraryClient.pdb
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.csprojResolveAssemblyReference.cache
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Arrangement.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Author.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Book.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Floor.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Genre.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Journal.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Librarian.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Location.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Reader.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Add_Status.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.MainForm.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.Properties.Resources.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.csproj.GenerateResource.Cache
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddCountry.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddEmp.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddFactory.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddJP.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddJS.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddPosition.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddProduct.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddProfile.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\obj\Debug\LibraryClient.AddShop.resources
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\EPPlus.dll
+C:\Users\Анастасия\Documents\Visual Studio 2015\Projects\lab4_моя + дашина\LibraryClient\LibraryClient\bin\Debug\EPPlus.xml

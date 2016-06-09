@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Reader" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Reader/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/LibraryServer/Reader/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServReader_get_MyHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyHuman" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_MyHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_MyHuman_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyHuman" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_MyHuman_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyHumanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Address_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Address" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Address_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_AddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Address_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Address" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Address_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_AddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Telephone_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Telephone" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Telephone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_TelephoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Telephone_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Telephone" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Telephone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_TelephoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Date_of_registration_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Date_of_registration" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Date_of_registration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Date_of_registrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Date_of_registration_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Date_of_registration" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Date_of_registration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Date_of_registrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_MyStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyStatus" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_MyStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_MyStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_MyStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyStatus" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_MyStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_MyStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Penalties_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Penalties" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_get_Penalties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_PenaltiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Penalties_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Penalties" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_set_Penalties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_PenaltiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_getAllReaders_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllReaders" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_getAllReaders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllReadersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_SaveReader_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveReader" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_SaveReader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_DeleteReader_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReader" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_DeleteReader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_UpdateReader_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReader" />
+  </wsdl:message>
+  <wsdl:message name="ServReader_UpdateReader_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReaderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServReader">
+    <wsdl:operation name="get_MyHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/get_MyHuman" message="tns:ServReader_get_MyHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/get_MyHumanResponse" message="tns:ServReader_get_MyHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyHuman">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/set_MyHuman" message="tns:ServReader_set_MyHuman_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/set_MyHumanResponse" message="tns:ServReader_set_MyHuman_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Address">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/get_Address" message="tns:ServReader_get_Address_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/get_AddressResponse" message="tns:ServReader_get_Address_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Address">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/set_Address" message="tns:ServReader_set_Address_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/set_AddressResponse" message="tns:ServReader_set_Address_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Telephone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/get_Telephone" message="tns:ServReader_get_Telephone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/get_TelephoneResponse" message="tns:ServReader_get_Telephone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Telephone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/set_Telephone" message="tns:ServReader_set_Telephone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/set_TelephoneResponse" message="tns:ServReader_set_Telephone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Date_of_registration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/get_Date_of_registration" message="tns:ServReader_get_Date_of_registration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/get_Date_of_registrationResponse" message="tns:ServReader_get_Date_of_registration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Date_of_registration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/set_Date_of_registration" message="tns:ServReader_set_Date_of_registration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/set_Date_of_registrationResponse" message="tns:ServReader_set_Date_of_registration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_MyStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/get_MyStatus" message="tns:ServReader_get_MyStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/get_MyStatusResponse" message="tns:ServReader_get_MyStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_MyStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/set_MyStatus" message="tns:ServReader_set_MyStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/set_MyStatusResponse" message="tns:ServReader_set_MyStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Penalties">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/get_Penalties" message="tns:ServReader_get_Penalties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/get_PenaltiesResponse" message="tns:ServReader_get_Penalties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Penalties">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/set_Penalties" message="tns:ServReader_set_Penalties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/set_PenaltiesResponse" message="tns:ServReader_set_Penalties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllReaders">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/getAllReaders" message="tns:ServReader_getAllReaders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/getAllReadersResponse" message="tns:ServReader_getAllReaders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReader">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/SaveReader" message="tns:ServReader_SaveReader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/SaveReaderResponse" message="tns:ServReader_SaveReader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReader">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/DeleteReader" message="tns:ServReader_DeleteReader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/DeleteReaderResponse" message="tns:ServReader_DeleteReader_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReader">
+      <wsdl:input wsaw:Action="http://tempuri.org/ServReader/UpdateReader" message="tns:ServReader_UpdateReader_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ServReader/UpdateReaderResponse" message="tns:ServReader_UpdateReader_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ServReader" type="tns:ServReader">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_MyHuman">
+      <soap:operation soapAction="http://tempuri.org/ServReader/get_MyHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyHuman">
+      <soap:operation soapAction="http://tempuri.org/ServReader/set_MyHuman" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Address">
+      <soap:operation soapAction="http://tempuri.org/ServReader/get_Address" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Address">
+      <soap:operation soapAction="http://tempuri.org/ServReader/set_Address" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Telephone">
+      <soap:operation soapAction="http://tempuri.org/ServReader/get_Telephone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Telephone">
+      <soap:operation soapAction="http://tempuri.org/ServReader/set_Telephone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Date_of_registration">
+      <soap:operation soapAction="http://tempuri.org/ServReader/get_Date_of_registration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Date_of_registration">
+      <soap:operation soapAction="http://tempuri.org/ServReader/set_Date_of_registration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_MyStatus">
+      <soap:operation soapAction="http://tempuri.org/ServReader/get_MyStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_MyStatus">
+      <soap:operation soapAction="http://tempuri.org/ServReader/set_MyStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Penalties">
+      <soap:operation soapAction="http://tempuri.org/ServReader/get_Penalties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Penalties">
+      <soap:operation soapAction="http://tempuri.org/ServReader/set_Penalties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllReaders">
+      <soap:operation soapAction="http://tempuri.org/ServReader/getAllReaders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReader">
+      <soap:operation soapAction="http://tempuri.org/ServReader/SaveReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReader">
+      <soap:operation soapAction="http://tempuri.org/ServReader/DeleteReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReader">
+      <soap:operation soapAction="http://tempuri.org/ServReader/UpdateReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Reader">
+    <wsdl:port name="BasicHttpBinding_ServReader" binding="tns:BasicHttpBinding_ServReader">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/LibraryServer/Reader/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

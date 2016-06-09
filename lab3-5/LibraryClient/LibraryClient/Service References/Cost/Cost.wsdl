@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Cost" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Cost/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Cost/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SCost_get_Cost_Product_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_Product" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_Product_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_ProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_Product_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_Product" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_Product_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_ProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_Old_cost_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_Old_cost" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_Old_cost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_Old_costResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_Old_cost_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_Old_cost" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_Old_cost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_Old_costResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_New_cost_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_New_cost" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_New_cost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_New_costResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_New_cost_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_New_cost" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_New_cost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_New_costResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_Date_C_InputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_Date_C" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_Cost_Date_C_OutputMessage">
+    <wsdl:part name="parameters" element="tns:get_Cost_Date_CResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_Date_C_InputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_Date_C" />
+  </wsdl:message>
+  <wsdl:message name="SCost_set_Cost_Date_C_OutputMessage">
+    <wsdl:part name="parameters" element="tns:set_Cost_Date_CResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_toString_InputMessage">
+    <wsdl:part name="parameters" element="tns:toString" />
+  </wsdl:message>
+  <wsdl:message name="SCost_toString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:toStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_InputMessage">
+    <wsdl:part name="parameters" element="tns:get" />
+  </wsdl:message>
+  <wsdl:message name="SCost_get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getResponse" />
+  </wsdl:message>
+  <wsdl:message name="SCost_getByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getByName" />
+  </wsdl:message>
+  <wsdl:message name="SCost_getByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getByNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SCost">
+    <wsdl:operation name="get_Cost_Product">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/get_Cost_Product" message="tns:SCost_get_Cost_Product_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/get_Cost_ProductResponse" message="tns:SCost_get_Cost_Product_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_Product">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/set_Cost_Product" message="tns:SCost_set_Cost_Product_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/set_Cost_ProductResponse" message="tns:SCost_set_Cost_Product_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Cost_Old_cost">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/get_Cost_Old_cost" message="tns:SCost_get_Cost_Old_cost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/get_Cost_Old_costResponse" message="tns:SCost_get_Cost_Old_cost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_Old_cost">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/set_Cost_Old_cost" message="tns:SCost_set_Cost_Old_cost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/set_Cost_Old_costResponse" message="tns:SCost_set_Cost_Old_cost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Cost_New_cost">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/get_Cost_New_cost" message="tns:SCost_get_Cost_New_cost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/get_Cost_New_costResponse" message="tns:SCost_get_Cost_New_cost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_New_cost">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/set_Cost_New_cost" message="tns:SCost_set_Cost_New_cost_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/set_Cost_New_costResponse" message="tns:SCost_set_Cost_New_cost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get_Cost_Date_C">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/get_Cost_Date_C" message="tns:SCost_get_Cost_Date_C_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/get_Cost_Date_CResponse" message="tns:SCost_get_Cost_Date_C_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_Date_C">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/set_Cost_Date_C" message="tns:SCost_set_Cost_Date_C_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/set_Cost_Date_CResponse" message="tns:SCost_set_Cost_Date_C_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/toString" message="tns:SCost_toString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/toStringResponse" message="tns:SCost_toString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/get" message="tns:SCost_get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/getResponse" message="tns:SCost_get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/SCost/getByName" message="tns:SCost_getByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/SCost/getByNameResponse" message="tns:SCost_getByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_SCost" type="tns:SCost">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_Cost_Product">
+      <soap:operation soapAction="http://tempuri.org/SCost/get_Cost_Product" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_Product">
+      <soap:operation soapAction="http://tempuri.org/SCost/set_Cost_Product" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Cost_Old_cost">
+      <soap:operation soapAction="http://tempuri.org/SCost/get_Cost_Old_cost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_Old_cost">
+      <soap:operation soapAction="http://tempuri.org/SCost/set_Cost_Old_cost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Cost_New_cost">
+      <soap:operation soapAction="http://tempuri.org/SCost/get_Cost_New_cost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_New_cost">
+      <soap:operation soapAction="http://tempuri.org/SCost/set_Cost_New_cost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_Cost_Date_C">
+      <soap:operation soapAction="http://tempuri.org/SCost/get_Cost_Date_C" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="set_Cost_Date_C">
+      <soap:operation soapAction="http://tempuri.org/SCost/set_Cost_Date_C" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <soap:operation soapAction="http://tempuri.org/SCost/toString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get">
+      <soap:operation soapAction="http://tempuri.org/SCost/get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getByName">
+      <soap:operation soapAction="http://tempuri.org/SCost/getByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Cost">
+    <wsdl:port name="BasicHttpBinding_SCost" binding="tns:BasicHttpBinding_SCost">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Cost/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
